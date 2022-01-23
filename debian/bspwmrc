@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 picom --no-fading-openclose &
-feh --bg-scale /home/user/.config/bg/bground.png
+feh --bg-scale $HOME/.config/bg/bground.png
 light-locker &
 $HOME/.config/polybar/launch.sh
 
