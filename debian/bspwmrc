@@ -2,7 +2,6 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-xrandr --output Virtual1 --mode 1920x1080 &
 picom --no-fading-openclose &
 feh --bg-scale /home/user/.config/bg/bground.png
 light-locker &
