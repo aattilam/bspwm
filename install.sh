@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 mkdir workdir
 cd workdir
 
@@ -20,6 +19,8 @@ mkdir -p ~/.config/{bspwm,sxhkd,polybar,bg}
 git clone https://git.suckless.org/dmenu
 cd dmenu
 sudo make clean install
+cd
+cd workdir
 sudo rm -r dmenu
 
 echo "installing config files."
@@ -48,7 +49,7 @@ while true; do
 done
 
 sudo apt install $packages -y
-
+cd $HOME
 echo "Cleaning up..."
 sudo rm -r workdir
 sudo apt-get autoremove -y && sudo apt-get autoclean -y
